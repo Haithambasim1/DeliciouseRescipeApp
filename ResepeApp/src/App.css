@@ -1,0 +1,84 @@
+.wrapper{
+    width: 70%;
+    margin: 4rem auto ;
+}
+.card{
+    min-height: 17rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+.card img{
+    border-radius: 2rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+}
+.card p{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    height: 40%;
+    font-size: 0.8;
+    font-weight: 500;
+  
+}
+
+
+
+@media (max-width: 962px){
+    .wrapper{
+        width: 80%;
+    }
+  
+    .veggeCard{
+        min-width: 10rem;
+    }
+    .popularCard{
+        min-width: 8rem;
+    }
+}
+
+@media (max-width: 768px){
+    .wrapper{
+        width: 90%;
+    }
+    .veggeCard{
+        min-width: 8rem;
+    }
+    .popularCard{
+        min-width: 6rem;
+    }
+    
+}
+
+
+@media (max-width: 450px){
+    .wrapper{
+        width: 80%;
+        margin: 2rem auto;
+    }
+    .card{
+        min-height: 10rem;
+        width: 5rem;
+        
+    }
+    .veggeCard{
+        min-width: 7rem;
+    }
+    .popularCard{
+        min-width: 4rem;
+    }
+    
+    
+}
